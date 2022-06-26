@@ -14,7 +14,7 @@
             </div>
 
             {{-- Search Topic --}}
-             <form  class="w-full" action="{{ route('search')}}" method="GET">
+             <form  class="w-full" action="" method="GET">
             <div class="flex items-center flex-grow">
            
                 @csrf
