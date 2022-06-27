@@ -36,7 +36,7 @@ Route::group(['prefix' => 'threads', 'as' => 'threads.'], function () {
     Route::get('/{thread:slug}/edit', [ThreadController::class, 'edit'])->name('edit');
     Route::post('/{thread:slug}', [ThreadController::class, 'update'])->name('update');
     Route::get('/{category:slug}/{thread:slug}', [ThreadController::class, 'show'])->name('show');
-    Route::get('/threads', [ThreadController::class, 'searchPost'])->name('search');
+    Route::post('/', [ThreadController::class, 'searchPost'])->name('search');
 
     Route::get('/{category:slug}/{thread:slug}/subscribe', [ThreadController::class, 'subscribe'])->name('subscribe');
     Route::get('/{category:slug}/{thread:slug}/unsubscribe', [ThreadController::class, 'unsubscribe'])->name('unsubscribe');

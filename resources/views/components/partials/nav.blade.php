@@ -14,14 +14,15 @@
             </div>
 
             {{-- Search Topic --}}
-             <form  class="w-full" action="" method="GET">
+             <form  class="w-full" action="{{ route('threads.search') }}" method="POST">
             <div class="flex items-center flex-grow">
            
                 @csrf
                 <div class="p-2 text-white bg-blue-200 border rounded-l">
                     <x-heroicon-o-search class="w-6 h-6" />
                 </div> 
-                <input type="search" name="search" id="myInput" class="w-full border-none rounded-r shadow-inner bg-blue-50 focus:ring-blue-200" placeholder="Search Topics">
+                <input type="search" name="query" id="MyInput" class="w-full border-none rounded-r shadow-inner bg-blue-50 focus:ring-blue-200" placeholder="Search Topics"
+                value="">
    
         </div>
          </form>
@@ -164,4 +165,5 @@
         </div>
         @endauth
     </div>
+  
 </nav>

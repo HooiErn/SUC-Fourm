@@ -9,7 +9,7 @@ use App\Models\Thread;
 use App\Models\Category;
 use App\Jobs\CreateThread;
 use App\Jobs\UpdateThread;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 use App\Policies\ThreadPolicy;
 use Illuminate\Container\Container;
 use App\Http\Controllers\Controller;
@@ -18,7 +18,10 @@ use App\Http\Requests\ThreadStoreRequest;
 use App\Jobs\SubscribeToSubscriptionAble;
 use App\Jobs\UnsubscribeFromSubscriptionAble;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
+use Illuminate\Support\Facades\Request;
 use DB;
+
+
 class ThreadController extends Controller
 {
     public function __construct()
@@ -104,9 +107,13 @@ class ThreadController extends Controller
             ->with('success', 'You have been unsubscribed from this thread');
     }
     public function searchPost(){
-        $r=request();
-        $keyword=$r->keyword;
-        $thread=DB::table('threads')->where('title','like','%'.$keyword.'%')->get();
-        return redirect()->route('threads.search')->with('threads',$thread);
-    }
+        $search = Request::get('query');
+        $threads = Thread::where('title','like','%'.$search.'%')->orderBy('id')->paginate(6);
+        return view('pages.threads.index',['threads' => $threads]);
+      }
+ 
+    
+   
 }
+
+
