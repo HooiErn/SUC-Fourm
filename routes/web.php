@@ -44,6 +44,11 @@ Route::group(['prefix' => 'threads', 'as' => 'threads.'], function () {
     Route::group(['as' => 'tags.'], function () {
         Route::get('/{tag:slug}', [TagController::class, 'index'])->name('index');
     });
+
+
+Route::group(['as' => 'categories.'], function () {
+    Route::get('/{category:slug}', [CategoryController::class, 'index'])->name('index');
+});
 });
 
 Route::group(['prefix' => 'replies', 'as' => 'replies.'], function () {

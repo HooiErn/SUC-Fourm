@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\HasTags;
+use App\Models\Category;
 use App\Traits\HasLikes;
 use App\Traits\HasViews;
 use App\Models\ReplyAble;
@@ -13,8 +14,8 @@ use Laravel\Jetstream\HasTeams;
 use App\Traits\HasSubscriptions;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use CyrildeWit\EloquentViewable\InteractsWithViews;
 use CyrildeWit\EloquentViewable\Contracts\Viewable;
+use CyrildeWit\EloquentViewable\InteractsWithViews;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -92,6 +93,13 @@ class Thread extends Model implements ReplyAble, SubscriptionAble, Viewable
     {
         return $query->whereHas('tagsRelation', function ($query) use ($tag) {
             $query->where('tags.slug', $tag);
+        });
+    }
+
+    public function scopeForCategory(Builder $query, string $category): Builder
+    {
+        return $query->whereHas('category', function ($query) use ($category){
+            $query->where('categories.slug', $category);
         });
     }
 }
