@@ -7,6 +7,7 @@ use App\Http\Controllers\Pages\HomeController;
 use App\Http\Controllers\Pages\ReplyController;
 use App\Http\Controllers\Pages\FollowController;
 use App\Http\Controllers\Pages\ThreadController;
+use App\Http\Controllers\Pages\CategoryController;
 use App\Http\Controllers\Pages\ProfileController;
 use App\Http\Controllers\Dashboard\NotificationController;
 
@@ -44,12 +45,14 @@ Route::group(['prefix' => 'threads', 'as' => 'threads.'], function () {
     Route::group(['as' => 'tags.'], function () {
         Route::get('/{tag:slug}', [TagController::class, 'index'])->name('index');
     });
-
-
-Route::group(['as' => 'categories.'], function () {
-    Route::get('/{category:slug}', [CategoryController::class, 'index'])->name('index');
+    Route::group(['as' => 'categories.'], function () {
+        Route::get('/{category:slug}', [CategoryController::class, 'index'])->name('index');
+    });
+   
 });
-});
+
+  
+
 
 Route::group(['prefix' => 'replies', 'as' => 'replies.'], function () {
     /* Name: Replies

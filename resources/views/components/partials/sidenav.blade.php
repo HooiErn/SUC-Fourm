@@ -41,14 +41,16 @@
         <div class="pb-4 mb-4 border-b border-gray-200">
             <h2 class="font-bold uppercase">Categories</h2>
         </div>
-
+       
         <ul class="space-y-4">
+             @foreach($categories as $category)
             <li>
-                <a href="#" class="flex items-center justify-between">
-                    Category One
+                <a href="{{ route('threads.categories.index', $category->slug()) }}" class="flex items-center justify-between">
+                {{ $category->name()}}
                     <span class="px-2 text-white bg-green-300 rounded">45</span>
                 </a>
             </li>
+            @endforeach
             <li>
                 <a href="#" class="flex items-center justify-between">
                     Category Two
@@ -73,6 +75,7 @@
                     <span class="px-2 text-white bg-green-300 rounded">45</span>
                 </a>
             </li>
+      
         </ul>
     </div>
 
