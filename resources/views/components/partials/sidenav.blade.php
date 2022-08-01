@@ -43,14 +43,14 @@
         </div>
        
         <ul class="space-y-4">
-             @foreach($categories as $category)
+             
             <li>
-                <a href="{{ route('threads.categories.index', $category->slug()) }}" class="flex items-center justify-between">
-                {{ $category->name()}}
+                <a href="#" class="flex items-center justify-between">
+                {{ $thread->catname}
                     <span class="px-2 text-white bg-green-300 rounded">45</span>
                 </a>
             </li>
-            @endforeach
+            
             <li>
                 <a href="#" class="flex items-center justify-between">
                     Category Two

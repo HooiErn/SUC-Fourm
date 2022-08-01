@@ -1,7 +1,9 @@
-<footer class="p-5 bg-blue-500">
-    <div class="text-white wrapper">
-        <span>
-            &copy Copyright 2021
-        </span>
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
     </div>
-</footer>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="#">Suc</a>.</strong> All rights reserved.
+  </footer>
