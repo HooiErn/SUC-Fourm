@@ -78,7 +78,7 @@
             <div>
                 <x-sidenav.link href="{{ route('threads.index') }}" :active="request()->routeIs('threads.index')">
                     <x-zondicon-view-tile class="w-3 text-green-400" />
-                    <span>{{ __('Index') }}</span>
+                    <span>{{ __('Post') }}</span>
                 </x-sidenav.link>
             </div>
         </div>
