@@ -23,7 +23,6 @@ use App\Http\Controllers\ChartJSController;
 |
 */
 
-Route::get('chart-js', [ChartJSController::class, 'index']);
 
 require 'admin.php';
 
