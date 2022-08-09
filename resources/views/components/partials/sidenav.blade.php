@@ -36,46 +36,20 @@
         @endauth
     </div>
 
-    {{-- Categories --}}
+    {{-- Path --}}
     <div class="p-4 space-y-4 bg-white shadow ">
         <div class="pb-4 mb-4 border-b border-gray-200">
-            <h2 class="font-bold uppercase">Categories</h2>
+            <h2 class="font-bold uppercase">Other pages</h2>
         </div>
        
         <ul class="space-y-4">
              
             <li>
-                <a href="#" class="flex items-center justify-between">
-                {{ $thread->catname}
-                    <span class="px-2 text-white bg-green-300 rounded">45</span>
+                <a href="{{ route('dashboard') }}" class="flex items-center justify-between">
+                {{ __('Dashboard') }}
                 </a>
             </li>
-            
-            <li>
-                <a href="#" class="flex items-center justify-between">
-                    Category Two
-                    <span class="px-2 text-white bg-green-300 rounded">45</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="flex items-center justify-between">
-                    Category Three
-                    <span class="px-2 text-white bg-green-300 rounded">45</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="flex items-center justify-between">
-                    Category Four
-                    <span class="px-2 text-white bg-green-300 rounded">45</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="flex items-center justify-between">
-                    Category Five
-                    <span class="px-2 text-white bg-green-300 rounded">45</span>
-                </a>
-            </li>
-      
+             
         </ul>
     </div>
 

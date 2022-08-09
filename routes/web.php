@@ -26,7 +26,7 @@ use App\Http\Controllers\ChartJSController;
 
 require 'admin.php';
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [ThreadController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'threads', 'as' => 'threads.'], function () {
     /* Name: Threads
