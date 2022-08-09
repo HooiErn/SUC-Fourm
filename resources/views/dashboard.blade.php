@@ -15,8 +15,8 @@
         </div>
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
-            <a href="#">
-            <h1 style="font-size:25px;!importance">02. Feedback</h1>
+            <a href="{{ route('about.us') }}">
+            <h1 style="font-size:25px;!importance">02. About Us</h1>
             </a>
             </div>
         </div>

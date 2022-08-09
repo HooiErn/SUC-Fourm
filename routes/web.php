@@ -78,6 +78,7 @@ Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.'], function () {
 // Profile
 Route::get('profile/user/{user:username}', [ProfileController::class, 'show'])->name('profile');
 
+
 // Follows
 Route::post('profile/user/{user:username}/follow', [FollowController::class, 'store'])->name('follow');
 
@@ -86,7 +87,8 @@ Route::get('dashboard/users', [PageController::class, 'users'])->name('users');
 Route::get('/dashboard/categories/index', [PageController::class, 'categoriesIndex'])->name('categories.index');
 Route::get('/dashboard/categories/create', [PageController::class, 'categoriesCreate'])->name('categories.create');
 
-
+//About us 
+Route::get('dashboard/aboutus', [HomeController::class, 'show'])->name('about.us');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
