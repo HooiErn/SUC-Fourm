@@ -23,42 +23,43 @@
     <link rel="stylesheet" href="assets/css/demo_1/style.css">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
+        <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="assets/js/shared/off-canvas.js"></script>
+    <script src="assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="assets/js/demo_1/dashboard.js"></script>
+    <!-- End custom js for this page-->
+    <script src="assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+     
   </head>
   <body>
     <div class="container-scroller" style="padding:1.5rem !important">
-  
+
               <div class="col-md-12">
                 <div class="page-header-toolbar">
                   <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
-                    <button type="button" class="btn btn-secondary">03/02/2020 - 22/8/2022</button>
-                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                    <table>
+                  <td>Date:</td>
+                    <td><div style="width:120px" class="input-group date">
+                        <input type="date" class="form-control pull-right" id="datepicker"/>
+                      </div> </td>
+                      <td>&nbsp To:</td>
+                      <td><div style="width:120px" class="input-group date">
+                        <input type="date" class="form-control pull-right" id="datepicker"/>
+                      </div></td>
                   </div>
-                  <div class="filter-wrapper">
-                    <div class="dropdown toolbar-item">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Day</button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownsorting">
-                        <a class="dropdown-item" href="#">Last Day</a>
-                        <a class="dropdown-item" href="#">Last Month</a>
-                        <a class="dropdown-item" href="#">Last Year</a>
-                      </div>
-                    </div>
-                    <a href="#" class="advanced-link toolbar-item">Advanced Options</a>
-                  </div>
-                  <div class="sort-wrapper">
-                    <button type="button" class="btn btn-primary toolbar-item">New</button>
-                    <div class="dropdown ml-lg-auto ml-3 toolbar-item">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownexport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownexport">
-                        <a class="dropdown-item" href="#">Export as PDF</a>
-                        <a class="dropdown-item" href="#">Export as DOCX</a>
-                        <a class="dropdown-item" href="#">Export as CDR</a>
-                      </div>
-                    </div>
-                  </div>
+                  </table>
                 </div>
               </div>
             </div>
+            <br>
             <!-- Page Title Header Ends-->
             <div class="row">
               <div class="col-md-12 grid-margin">
@@ -73,7 +74,7 @@
                             <p class="mb-0 text-muted">+14.00(+0.50%)</p>
                           </div>
                           <div class="wrapper my-auto ml-auto ml-lg-4">
-                            <canvas height="50" width="100" id="stats-line-graph-1"></canvas>
+                            <canvas height="50" width="100" id="stats-line-graph-1" ></canvas>
                           </div>
                         </div>
                       </div>
@@ -111,6 +112,7 @@
                           <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-4"></canvas>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -527,21 +529,7 @@
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page-->
-    <!-- End plugin js for this page-->
-    <!-- inject:js -->
-    <script src="assets/js/shared/off-canvas.js"></script>
-    <script src="assets/js/shared/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
-    <script src="assets/js/demo_1/dashboard.js"></script>
-    <!-- End custom js for this page-->
-    <script src="assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
-  
+
   </body>
    
 

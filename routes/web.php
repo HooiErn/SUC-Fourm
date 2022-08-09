@@ -10,6 +10,7 @@ use App\Http\Controllers\Pages\ThreadController;
 use App\Http\Controllers\Pages\CategoryController;
 use App\Http\Controllers\Pages\ProfileController;
 use App\Http\Controllers\Dashboard\NotificationController;
+use App\Http\Controllers\ChartJSController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,8 @@ use App\Http\Controllers\Dashboard\NotificationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('chart-js', [ChartJSController::class, 'index']);
 
 require 'admin.php';
 
@@ -83,6 +86,8 @@ Route::get('dashboard/users', [PageController::class, 'users'])->name('users');
 
 Route::get('/dashboard/categories/index', [PageController::class, 'categoriesIndex'])->name('categories.index');
 Route::get('/dashboard/categories/create', [PageController::class, 'categoriesCreate'])->name('categories.create');
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
