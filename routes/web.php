@@ -10,7 +10,6 @@ use App\Http\Controllers\Pages\ThreadController;
 use App\Http\Controllers\Pages\CategoryController;
 use App\Http\Controllers\Pages\ProfileController;
 use App\Http\Controllers\Dashboard\NotificationController;
-use App\Http\Controllers\ChartJSController;
 
 /*
 |--------------------------------------------------------------------------

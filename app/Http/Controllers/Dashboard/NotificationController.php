@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Middleware\Authenticate;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
+use DB;
 
 class NotificationController extends Controller
 {
@@ -16,6 +17,9 @@ class NotificationController extends Controller
 
     public function index()
     {
-        return view('dashboard.notifications.index');
+        $notifications = DB::table('notifications')->get();
+        return view('dashboard.notifications.index')
+        ->with('notifications',$notifications);
+        
     }
 }
