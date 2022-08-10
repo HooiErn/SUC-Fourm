@@ -69,7 +69,17 @@
             </div>
         </div>
         @endif
-
+        <div>
+        <x-sidenav.title>
+                {{ __('Extra Page') }}
+            </x-sidenav.title>
+            <div>
+                <x-sidenav.link href="{{ route('about.us') }}" :active="request()->routeIs('threads.index')">
+                    <x-zondicon-view-tile class="w-3 text-green-400" />
+                    <span>{{ __('About Us') }}</span>
+                </x-sidenav.link>
+            </div>
+        </div>
         {{-- Threads --}}
         <div>
             <x-sidenav.title>

@@ -69,7 +69,7 @@
                       <div class="col-lg-3 col-md-6">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold">12,451</h3>
+                            <h3 class="mb-0 font-weight-semibold">451</h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Users</h5>
                             <p class="mb-0 text-muted">+14.00(+0.50%)</p>
                           </div>
@@ -81,7 +81,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold">5,236</h3>
+                            <h3 class="mb-0 font-weight-semibold">236</h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Posts</h5>
                             <p class="mb-0 text-muted">+38.97(+0.54%)</p>
                           </div>
@@ -93,7 +93,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold">30</h3>
+                            <h3 class="mb-0 font-weight-semibold">10</h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Category</h5>
                             <p class="mb-0 text-muted">+57.62(+0.76%)</p>
                           </div>
@@ -105,7 +105,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold">1,553</h3>
+                            <h3 class="mb-0 font-weight-semibold">53</h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Tags</h5>
                             <p class="mb-0 text-muted">+138.97(+0.54%)</p>
                           </div>
@@ -154,7 +154,7 @@
                         <div class="wrapper">
                           <h5 class="mb-0">Total Posts</h5>
                           <div class="d-flex align-items-center">
-                            <h4 class="font-weight-semibold mb-0">$753,098</h4>
+                            <h4 class="font-weight-semibold mb-0">598</h4>
                             <small class="ml-2 text-gray d-none d-lg-block"><b>10.5%</b> of 20,000 Total</small>
                           </div>
                         </div>
@@ -190,7 +190,7 @@
                         </div>
                         <h3 class="font-weight-medium mb-4">4.42K</h3>
                       </div>
-                      <canvas class="mt-n4" height="90" id="total-revenue"></canva>
+                  
                     </div>
                   </div>
                   <div class="col-md-6 grid-margin stretch-card">
@@ -202,7 +202,7 @@
                         </div>
                         <h3 class="font-weight-medium">3.7K</h3>
                       </div>
-                      <canvas class="mt-n3" height="90" id="total-transaction"></canva>
+                     
                     </div>
                   </div>
                  
@@ -316,14 +316,14 @@
                         <div class="row">
                           <div class="col-5 col-md-5">
                             <div class="border-bottom mb-2 pb-2">
-                              <h4 class="font-weight-semibold mb-0">523,200</h4>
+                              <h4 class="font-weight-semibold mb-0">2,200</h4>
                               <div class="d-flex align-items-center">
                                 <p class="mb-0">Page Views</p>
                                 <div class="dot-indicator bg-secondary ml-auto"></div>
                               </div>
                             </div>
                             <div >
-                              <h4 class="font-weight-semibold mb-0">753,098</h4>
+                              <h4 class="font-weight-semibold mb-0">198</h4>
                               <div class="d-flex align-items-center">
                                 <p class="mb-0">Bounce Rate</p>
                                 <div class="dot-indicator bg-primary ml-auto"></div>
@@ -338,7 +338,7 @@
                               <div class="icon-holder bg-primary text-white py-1 px-3 rounded mr-2">
                                 <i class="icon ion-logo-buffer icon-sm"></i>
                               </div>
-                              <h2 class="font-weight-semibold mb-0">3,605</h2>
+                              <h2 class="font-weight-semibold mb-0">1,605</h2>
                             </div>
                             <p>Since last week</p>
                             <p><span class="font-weight-medium">0.51%</span> (30 days)</p>
@@ -515,13 +515,7 @@
             </div>
           </div>
           <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>
+       
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
