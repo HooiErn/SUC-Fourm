@@ -38,6 +38,7 @@
                     {{ __('Forgot your password?') }}
                 </a>
                 @endif
+                <div>
 
                 <x-buttons.primary class="ml-4">
                     {{ __('Log in') }}
@@ -45,4 +46,9 @@
             </div>
         </form>
     </x-jet-authentication-card>
+    <div>
+            <a class="underline text-md hover:text-red-900" href="{{ route('register') }}" style="padding-left:360px;color:white;">
+                    {{ __('Sign In?') }}          
+                </a>
+            </div>
 </x-base-layout>
