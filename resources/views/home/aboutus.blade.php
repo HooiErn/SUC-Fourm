@@ -12,6 +12,8 @@
         }
         img{
             cursor:pointer;
+            width: 400px;
+            height:500px
             
         }
         img:hover{
@@ -31,7 +33,7 @@
 <div class="row" style="display:flex; justify-content:space-between;">
   <div class="column">
     <div class="card">
-      <img src="/img/avatars/person2.jpg" alt="Jane">
+      <img src="/img/avatars/lhe.png" alt="LimHooiErn">
       <div class="container">
         <h2 style="font-weight:bold">Lim Hooi Ern</h2>
         <p class="title">Web Developer</p>
@@ -43,7 +45,7 @@
 
   <div class="column">
     <div class="card">
-      <img src="/img/avatars/person1.jpg" alt="Mike">
+      <img src="/img/avatars/ljf.jpeg" alt="LaiJinFatt">
       <div class="container">
         <h2 style="font-weight:bold">Lai Jin Fatt</h2>
         <p class="title">Web Developer</p>
@@ -55,7 +57,7 @@
   
   <div class="column">
     <div class="card">
-      <img src="/img/avatars/person4.jpg" alt="John">
+      <img src="/img/avatars/ljx.jpg" alt="Lee Jia Xuan">
       <div class="container">
         <h2 style="font-weight:bold">Lee Jia Xuan</h2>
         <p class="title">Web Developer</p>
