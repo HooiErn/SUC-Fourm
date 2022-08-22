@@ -18,14 +18,6 @@
                     <span>{{ __('Users') }}</span>
                 </x-sidenav.link>
             </div>
-            @if(auth()->user()->isAdmin())
-            <div>
-                <x-sidenav.link href="{{ route('admin.index') }}" :active="request()->routeIs('admin.index')">
-                    <x-zondicon-view-tile class="w-3 text-green-400" />
-                    <span>{{ __('Admin Dashboard') }}</span>
-                </x-sidenav.link>
-            </div>
-            @endif
             <div>
                 <x-sidenav.link href="{{ route('dashboard.notifications.index') }}" :active="request()->routeIs('dashboard.notifications.index')">
                     <x-zondicon-notifications-outline class="w-3 text-green-400" />

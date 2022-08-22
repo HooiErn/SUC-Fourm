@@ -48,8 +48,7 @@
                 <a href="{{ route('dashboard') }}" class="flex items-center justify-between">
                 {{ __('Dashboard') }}
                 </a>
-            </li>
-             
+            </li>           
         </ul>
     </div>
 
