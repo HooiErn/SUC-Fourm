@@ -52,7 +52,7 @@
         </ul>
     </div>
 
-    <div class="p-4 space-y-4 bg-white shadow">
+    <!-- <div class="p-4 space-y-4 bg-white shadow">
         <ul class="space-y-4 text-gray-500">
             <li>
                 <a href="#" class="flex items-center space-x-2">
@@ -73,7 +73,7 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
 
 </aside>
