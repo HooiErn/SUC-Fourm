@@ -15,4 +15,26 @@ class TagController extends Controller
             'threads'       => Thread::ForTag($tag->slug())->paginate(10),
         ]);
     }
+    
+    public function create()
+    {
+        return view('tags.create');
+    }
+
+
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'name'  => ['required', 'unique:tags']
+        ]);
+
+        Tag::create([
+            'name'  => $request->name,
+            'slug'  => Str::slug($request->name),
+        ]);
+
+        return redirect()->route('tags.index')->with('success', 'Tag Created');
+        
+    }
+
 }

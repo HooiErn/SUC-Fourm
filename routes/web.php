@@ -86,6 +86,12 @@ Route::get('dashboard/users', [PageController::class, 'users'])->name('users');
 Route::get('/dashboard/categories/index', [PageController::class, 'categoriesIndex'])->name('categories.index');
 Route::get('/dashboard/categories/create', [PageController::class, 'categoriesCreate'])->name('categories.create');
 
+Route::group(['prefix' => 'tags', 'as' => 'tags.'], function () {
+    Route::get('/create', [TagController::class, 'create'])->name('create');
+    Route::post('/', [TagController::class, 'store'])->name('store');
+
+});
+
 //About us 
 Route::get('dashboard/aboutus', [HomeController::class, 'show'])->name('about.us');
 
